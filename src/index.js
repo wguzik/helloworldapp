@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <div class="container">
-        <h1>Witaj swiecie ${regionName}!</h1>
+        <h1>Witaj swiecie prosto z ${regionName}!</h1>
       </div>
     </body>
     </html>
