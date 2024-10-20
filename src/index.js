@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <div class="container">
-        <h1>KastetTHC ${regionName}!</h1>
+        <h1>KastetTHC100% ${regionName}!</h1>
       </div>
     </body>
     </html>
