@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.get('/', (req, res) => {
   const regionName = process.env.REGION_NAME || 'Default';
+  const resourceGroup = process.env.WEBSITE_RESOURCE_GROUP || 'Default';
   res.send(`
     <!DOCTYPE html>
     <html lang="en">
@@ -26,8 +27,9 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <div class="container">
-        <h1>Witaj swiecie prosto z ${regionName}!</h1>
+        <h1>Witaj swiecie prosto z ${regionName}! </h1>
         <h2>z chmury azure</h2>
+        <p>Grupa zasobow ${resourceGroup}</p>
       </div>
     </body>
     </html>
